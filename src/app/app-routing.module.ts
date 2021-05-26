@@ -18,6 +18,11 @@ const routes: Routes = [
     path: 'perfil-de-usuario',
     loadChildren: () => import('./perfil-de-usuario/perfil-de-usuario.module').then( m => m.PerfilDeUsuarioPageModule)
   },
+  
+  {
+    path: 'elegir-biblioteca',
+    loadChildren: () => import('./elegir-biblioteca/elegir-biblioteca.module').then( m => m.ElegirBibliotecaPageModule)
+  },
 
 ];
 
