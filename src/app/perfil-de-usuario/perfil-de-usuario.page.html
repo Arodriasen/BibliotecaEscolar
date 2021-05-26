@@ -1,12 +1,12 @@
 <ion-content class="fondoPerfilUsuario" [fullscreen]="true">
 
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Perfil de Usuario
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Perfil de Usuario
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
 
   <ion-row>
     <ion-col size="4"></ion-col>
@@ -16,54 +16,59 @@
     <ion-col></ion-col>
   </ion-row>
 
-<div>
   <div>
-    <ion-item>
-      <ion-label position="center">
-        Nombre del Colegio:
-      </ion-label>
-    </ion-item>
-  </div>
-  <div>
-    <ion-item>
-      <ion-label>San Antonio de Padua</ion-label>
-    </ion-item>
+    <div>
+      <ion-item>
+        <ion-label position="center">
+          Nombre del Colegio:
+        </ion-label>
+      </ion-item>
+    </div>
+    <div>
+      <ion-item>
+        <ion-label>San Antonio de Padua</ion-label>
+      </ion-item>
+    </div>
+
+    <div class="ion-margin">
+      <ion-item>
+        <ion-label position="center">
+          Nombre del alumno:
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label position="center">
+          Andrés Pérez Sewer
+        </ion-label>
+      </ion-item> 
+    </div>
+
+    <div>
+      <ion-item>
+        <ion-label position="center">
+          Tutor del alumno:
+        </ion-label>
+      </ion-item>
+    </div>
+    <div>
+      <ion-item>
+        <ion-label> Francisco Rubalcaba Rajoy</ion-label>
+      </ion-item>
+    </div>
+
+    <div class="btn">
+      <a class="boton" href="mailto:email@email.co">EMAIL</a>
+    </div>
+
+    <div>
+      <ion-button routerLink="/home" class="anybutton">
+        SALIR
+      </ion-button>
+    </div>
   </div>
 
-  <div class="ion-margin">
-    <ion-item>
-      <ion-label position="center">
-        Nombre del alumno:
-      </ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label position="center">
-        Andrés Pérez Sewer
-      </ion-label>
-    </ion-item> 
+  <div>
+    <ion-button class="biblio" routerLink="/pagina_biblioteca">Biblioteca</ion-button>
   </div>
 
-  <div>
-    <ion-item>
-      <ion-label position="center">
-        Tutor del alumno:
-      </ion-label>
-    </ion-item>
-  </div>
-  <div>
-    <ion-item>
-      <ion-label> Francisco Rubalcaba Rajoy</ion-label>
-    </ion-item>
-  </div>
-
-  <div class="btn">
-    <a class="boton" href="mailto:email@email.co">Email Tutor</a>
-  </div>
-
-  <div>
-    <ion-button routerLink="/home" class="anybutton">
-      SALIR
-    </ion-button>
-  </div>
-</div>
 </ion-content>
