@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'elegir-biblioteca',
     loadChildren: () => import('./elegir-biblioteca/elegir-biblioteca.module').then( m => m.ElegirBibliotecaPageModule)
   },
+  {
+    path: 'biblioteca-colegio',
+    loadChildren: () => import('./biblioteca-colegio/biblioteca-colegio.module').then( m => m.BibliotecaColegioPageModule)
+  },
 
 ];
 
