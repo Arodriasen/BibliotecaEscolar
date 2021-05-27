@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'biblioteca-colegio',
     loadChildren: () => import('./biblioteca-colegio/biblioteca-colegio.module').then( m => m.BibliotecaColegioPageModule)
   },
+  {
+    path: 'biblioteca-personal',
+    loadChildren: () => import('./biblioteca-personal/biblioteca-personal.module').then( m => m.BibliotecaPersonalPageModule)
+  },
 
 ];
 
