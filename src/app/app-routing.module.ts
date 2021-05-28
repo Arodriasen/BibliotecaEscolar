@@ -18,6 +18,19 @@ const routes: Routes = [
     path: 'perfil-de-usuario',
     loadChildren: () => import('./perfil-de-usuario/perfil-de-usuario.module').then( m => m.PerfilDeUsuarioPageModule)
   },
+  
+  {
+    path: 'elegir-biblioteca',
+    loadChildren: () => import('./elegir-biblioteca/elegir-biblioteca.module').then( m => m.ElegirBibliotecaPageModule)
+  },
+  {
+    path: 'biblioteca-colegio',
+    loadChildren: () => import('./biblioteca-colegio/biblioteca-colegio.module').then( m => m.BibliotecaColegioPageModule)
+  },
+  {
+    path: 'biblioteca-personal',
+    loadChildren: () => import('./biblioteca-personal/biblioteca-personal.module').then( m => m.BibliotecaPersonalPageModule)
+  },
 
 ];
 

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Biblioteca General</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div>
+    <ion-item-divider class="nombreColegio" color="secondary">
+      
+      <ion-label position="inline">Colegio San Antonio de Padua</ion-label>
+      
+    </ion-item-divider>
+
+  </div>
+
+  <ion-item class="ion-margin-top">
+    <ion-label class="busqueda" position="floating">Búsqueda por título</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item class="ion-margin-top">
+    <ion-label class="busqueda" position="floating">Búsqueda por año</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item class="ion-margin-top">
+    <ion-label class="busqueda" position="floating">Búsqueda por autor</ion-label>
+    <ion-input autocapitalize="on"></ion-input>
+  </ion-item>
+
+  <ion-item class="ion-margin-top">
+    <ion-label>Búsqueda por género literario</ion-label>
+    <ion-select value="00">
+      <ion-select-option value="01">Fantasia</ion-select-option>
+      <ion-select-option value="02">Terror</ion-select-option>
+      <ion-select-option value="03">Novela Romántica</ion-select-option>
+      <ion-select-option value="04">Distopia</ion-select-option>
+      <ion-select-option value="05">Novela Negra</ion-select-option>
+      <ion-select-option value="06">Novela Histórica</ion-select-option>
+      <ion-select-option value="07">Infantil</ion-select-option>
+      <ion-select-option value="08">Adolescente</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+    <ion-button shape="round" class="ion-margin-top" expand="block" fill="solid">BUSCAR</ion-button>
+
+</ion-content>
