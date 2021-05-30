@@ -30,7 +30,11 @@ const routes: Routes = [
   {
     path: 'biblioteca-personal',
     loadChildren: () => import('./biblioteca-personal/biblioteca-personal.module').then( m => m.BibliotecaPersonalPageModule)
+  },  {
+    path: 'libros-biblio-general',
+    loadChildren: () => import('./libros-biblio-general/libros-biblio-general.module').then( m => m.LibrosBiblioGeneralPageModule)
   },
+
 
 ];
 
