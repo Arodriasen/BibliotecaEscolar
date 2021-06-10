@@ -21,42 +21,36 @@
     </ion-item-divider>
   </div>
 
-  <ion-grid class="ion-margin">
-    <ion-row>
-      <ion-col>Título</ion-col>
-      <ion-col>Estado</ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>Ética para Nicomaco</ion-col>
-      <ion-col>Obligado</ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>El Cuervo</ion-col>
-      <ion-col>Recomendado</ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>El Señor de los Anillos</ion-col>
-      <ion-col>Reservado</ion-col>
-    </ion-row>
-  </ion-grid>
+  <ion-list class="ion-padding">
+    <ion-item *ngFor="let libro of libros">
+      <ion-item>
+        <ion-img id="portada" [src]="libro.cover"></ion-img>
+        <ion-label>
+          <h2>Autor: {{libro.author}}</h2>
+          <h3>Título: {{libro.title}}</h3>
+        </ion-label>
+      </ion-item>
+    </ion-item>
+  </ion-list>
 
   <div class="seccionLibros">
-    <ion-label class="ion-padding" position="inline">Listado de tareas</ion-label>
+    <ion-label class="ion-padding" position="inline">Marcar las tareas hechas</ion-label>
     <ion-list>
-      <ion-item>
-        <ion-label position="inline">Resumen de El Cuervo</ion-label>
-        <ion-checkbox color="primary"></ion-checkbox>
-      </ion-item>
-      <ion-item>
-        <ion-label position="inline">Conceptos principales de Ética para Nicomaco</ion-label>
-        <ion-checkbox color="primary"></ion-checkbox>
+      <ion-item *ngFor="let libro of libros">
+        <ion-item>
+          <ion-label position="inline">
+            <h3>Título: {{libro.title}}</h3>
+            <button (click)="presentModalTarea()" class="btn btn-lg btn-outline-primary">Tarea</button>
+          </ion-label>
+            <ion-checkbox color="primary"></ion-checkbox> 
+        </ion-item>
       </ion-item>
     </ion-list>
   </div>
 
   <div class="botonSalir">
 
-    <ion-button size="small">SALIR</ion-button>
+    <ion-button routerLink="/perfil-de-usuario" size="small">SALIR</ion-button>
     
   </div>
 </ion-content>

@@ -1,6 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Biblioteca General</ion-title>
+
   </ion-toolbar>
 </ion-header>
 
@@ -8,15 +9,15 @@
 
   <div>
     <ion-item-divider class="nombreColegio" color="secondary">
-      
+
       <ion-label position="inline">Colegio San Antonio de Padua</ion-label>
-      
+
     </ion-item-divider>
 
   </div>
 
   <ion-item class="ion-margin-top">
-    <ion-label class="busqueda" position="floating">Búsqueda por título</ion-label>
+    <ion-label id="busquedaTitulo" class="busqueda" position="floating">Búsqueda por título</ion-label>
     <ion-input></ion-input>
   </ion-item>
 
@@ -43,7 +44,15 @@
       <ion-select-option value="08">Adolescente</ion-select-option>
     </ion-select>
   </ion-item>
-
-    <ion-button routerLink="/libros-biblio-general" shape="round" class="ion-margin-top" expand="block" fill="solid">BUSCAR</ion-button>
-
+  <div style="text-align:center">
+    <div class="ion-margin">
+      <ion-button style="position: relative" routerLink="/storage" shape="round" class="ion-margin-top" fill="solid">Catálogo completo</ion-button>
+    </div>
+    <div class="ion-margin">
+      <ion-button expand="default" routerLink="/storage" shape="round" class="ion-margin-top" fill="solid">BUSCAR</ion-button>
+    </div>
+    <div>
+      <ion-button expand="default" shape="round" routerLink="/perfil-de-usuario" size="small">SALIR</ion-button>
+    </div>
+  </div>
 </ion-content>

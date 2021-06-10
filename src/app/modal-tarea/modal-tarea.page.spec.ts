@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { LibrosBiblioGeneralPage } from './libros-biblio-general.page';
+import { ModalTareaPage } from './modal-tarea.page';
 
-describe('LibrosBiblioGeneralPage', () => {
-  let component: LibrosBiblioGeneralPage;
-  let fixture: ComponentFixture<LibrosBiblioGeneralPage>;
+describe('ModalTareaPage', () => {
+  let component: ModalTareaPage;
+  let fixture: ComponentFixture<ModalTareaPage>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ LibrosBiblioGeneralPage ],
+      declarations: [ ModalTareaPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(LibrosBiblioGeneralPage);
+    fixture = TestBed.createComponent(ModalTareaPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

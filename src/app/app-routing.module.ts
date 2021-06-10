@@ -30,11 +30,22 @@ const routes: Routes = [
   {
     path: 'biblioteca-personal',
     loadChildren: () => import('./biblioteca-personal/biblioteca-personal.module').then( m => m.BibliotecaPersonalPageModule)
-  },  {
-    path: 'libros-biblio-general',
-    loadChildren: () => import('./libros-biblio-general/libros-biblio-general.module').then( m => m.LibrosBiblioGeneralPageModule)
   },
-
+  {
+    path: 'storage',
+    loadChildren: () => import('./storage/storage.module').then( m => m.StoragePageModule)
+  },
+  {
+    path: 'storage',
+    loadChildren: () => import('./storage/storage.module').then( m => m.StoragePageModule)
+  },
+  {
+    path: 'modal',
+    loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)
+  },  {
+    path: 'modal-tarea',
+    loadChildren: () => import('./modal-tarea/modal-tarea.module').then( m => m.ModalTareaPageModule)
+  }
 
 ];
 
